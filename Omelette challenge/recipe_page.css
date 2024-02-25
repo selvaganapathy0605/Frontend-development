@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 1450px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    width: 600px;
+    height: 1300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3% .5% 0 .5;
+    border-radius: 20px;
+}
+
+.line {
+    width: 550px;
+    height: 5px;
+    padding-left: 2.5%;
+
+}
+
+.top {
+    width: 550px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    margin: 3.5% 3.5% 0 3.5%;
+}
+
+.top img {
+    width: 550px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 1% 0 3% 0;
+}
+
+.top #heading h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.top .words {
+    margin: 15px 0 15px 0;
+}
+
+.words {
+    color: #515151;
+}
+
+.duration {
+    width: 400px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.duration #head {
+    color: #d72e5e;
+    font-size: 13px;
+    margin: 0 0 0 10%;
+}
+
+.duration #timing {
+    margin: 1% 0 0 18%;
+}
+
+.duration #timing ul li {
+    margin: 2%;
+}
+
+.duration #timing ul li b {
+    color: #000;
+}
+
+.needed {
+    width: 700px;
+    height: 170px;
+}
+
+.topic {
+    margin: 0 0 1.4% 2%;
+    color: #c9184a;
+}
+
+.needed #things {
+    margin-left: 4%;
+}
+
+.needed #things ul li {
+    margin: .6%;
+    color: #c9184a;
+}
+
+.needed #things ul span {
+    margin-left: 3%;
+}
+
+.command {
+    width: 100%;
+    height: 300px;
+    margin: 2.5% 0 5% 0;
+}
+
+.command .points {
+    margin-left: 4%;
+    color: #c9184a;
+}
+
+.command .points ol li {
+    margin: 1%;
+    font-weight: bolder;
+}
+
+.command .points ol span {
+    margin-left: 2%;
+    font-weight: normal;
+}
+
+.strength {
+    width: 550px;
+    height: 260px;
+    margin: 2% 0 0 2.5%;
+}
+
+.strength #note {
+    margin-left: 3%;
+    color: #515151;
+}
+
+.strength .list{
+    width:550px;
+    height: 165px;
+    margin:5% 3% 3% 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.strength .list .line2{
+    width:550px;
+    margin: 2% 0;
+}
+
+.strength .list .point{
+    width: 400px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.strength .list .point span{
+    margin-right:25%;
+}
