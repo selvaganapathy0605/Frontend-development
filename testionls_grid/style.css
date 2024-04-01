@@ -1,0 +1,585 @@
+body{
+    width:100%;
+    min-height:100vh;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #a7a5a5;
+    font-family: Barlow Semi Condensed;
+}
+
+#container{
+    width:90%;
+    height: 2350px;
+    display: grid;
+    place-content: center;
+    grid-template-rows: 520px 300px 270px 460px 575px;
+    grid-template-areas: 
+    "a"
+    "b"
+    "d"
+    "e"
+    "c";
+    gap:15px;
+}
+
+.box{
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.white{
+    color:#fff;
+}
+
+.lite{
+    color:#ffffff70;
+}
+
+.profile{
+    width: 93%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 6%;
+}
+
+.profile .img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+
+.profile img{
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile #img-1{
+    border: 3px solid #8d17c8;
+}
+
+.profile #img-2{
+    border: 3px solid hsl(210, 4%, 53%);
+}
+
+.profile #img-3{
+    border: 3px solid hsl(210, 2%, 61%);
+}
+
+.profile #img-4{
+    border: 3px solid hsl(220, 1%, 46%);
+}
+
+.profile #img-5{
+    border: 3px solid hsl(220, 2%, 35%);
+}
+
+.profile .id{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-flow:column;
+    align-items: start;
+    justify-content: space-evenly;
+    margin-left: 8%;
+    margin-top: 1%;
+    gap:1px;
+}
+
+.id .name{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.id .sub-name{
+    height: 50%;
+    font-size: 1.05em;
+}
+
+.head{
+    width: 90%;
+    height: 170px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 7%;
+}
+
+.discription{
+    width: 90%;
+    display: flex;
+    font-weight: 500;
+}
+
+
+#box-1{
+    background-color: hsl(263, 55%, 52%);
+    background-image:url("images/bg-pattern-quotation.svg") ;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-x: 87%;
+    background-size:120px;
+    grid-area: a;
+}
+
+#head-1{
+    margin-bottom: 3%;
+    margin-top: 1%;
+    height: 160px;
+}
+
+#discription-1{
+    height: 250px;
+    word-spacing: 1.4px;
+    margin-top: 2%;
+}
+
+
+#box-2{
+    background-color: hsl(217, 19%, 35%);
+    grid-area: b;
+}
+
+#head-2{
+    height:70px;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+#discription-2{
+    height:120px;
+    margin-bottom:12% ;
+    word-spacing: 1.3px;
+}
+
+#box-3{
+    background-color: #efececec;
+    grid-area: c;
+}
+
+#head-3{
+    height:70px;
+    flex-flow: column;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+}
+
+#discription-3{
+    height: 320px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+#box-4{
+    background-color: #efececec;
+    grid-area: d;
+}
+
+.box .black{
+    color:#000;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.box .lite-black{
+    color:#00000080;
+}
+
+#head-4{
+    height: 80px;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+#discription-4{
+    height: 90px;
+    word-spacing:1px;
+    margin-bottom:10% ;
+}
+
+#box-5{
+    background-color: hsl(219, 29%, 14%);
+    grid-area: e;
+}
+
+#head-5{
+    height: 150px;
+    font-size: 1.2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+#discription-5{
+    height: 200px;
+    margin-bottom:10%;
+}
+
+@media(min-width:321px){
+
+    #container{
+        height: 2300px;
+        grid-template-rows: 500px 300px 270px 460px 575px;
+    }
+
+    .profile{
+        width:80%;
+    }
+
+    .head{
+        width:80%;
+    }
+
+    .discription{
+        width:80%;
+    }
+}
+
+@media(min-width:376px){
+
+    #container{
+        height: 2200px;
+        grid-template-rows: 480px 280px 250px 440px 520px;
+    }
+
+    .profile{
+        width:80%;
+    }
+
+    .head{
+        width:80%;
+    }
+
+    .discription{
+        width:80%;
+    }
+
+    #profile-2{
+        height: 90px;
+        margin-top: 3%;
+    }
+
+    #head-2{
+        margin-bottom: 5%;
+    }
+
+    #head-4{
+        margin-bottom: 5%;
+    }
+
+    #head-3{
+        margin-top:4% ;
+    }
+
+    #discription-5{
+        margin-top:4% ;
+    }
+}
+
+@media(min-width:1024px){
+
+    *{
+        margin: 0;
+    }
+    
+    body{
+        width:100%;
+        min-height:100vh;
+        display: grid;
+        place-items: center;
+        margin: 0;
+        background-color: #a7a5a5;
+        font-family: Barlow Semi Condensed;
+    }
+
+    #container{
+        width:90%;
+        height:775px;
+        display: grid;
+        place-content: center;
+        grid-template-columns:27% 23% 27% 27% ;
+        grid-template-rows: 400px 330px; 
+        grid-template-areas: 
+        "a a b c"
+        "d e e c";
+        gap:2px; 
+    }
+    
+    .profile{
+        width:90%;
+    }
+    
+    .id{
+        margin:1% 0 0 8%;
+    }
+
+    .head{
+        width:90%;
+        margin: 0;
+    }
+    
+    .discription{
+        width:90%;
+        margin: 0;
+    }
+
+    #box-1{
+        width:100%;
+        height:390px;
+    }
+    
+    #profile-1{
+        height: 120px;
+        margin: 2% 1% 0 0;
+    }
+
+    #id-1{
+        margin: 0 0 2% 2%;
+    }
+
+    #head-1{
+        margin: 2% 0 3% 0 ;
+    }
+
+    #discription-1{
+        margin:0;
+    }
+
+    #box-2{
+        width:90%;
+        height: 390px;
+        margin-left: 5%;
+    }
+
+    #profile-2{
+        height: 70px;
+        margin: 4% 1% 0 0;
+    }
+    
+    #id-2{
+        margin:0 0 0 4%;
+        height:60px;
+    }
+
+    #id-2 .name{
+        margin: 0;
+    }
+    
+    #id-2 .sub-name{
+        margin: 0;
+    }
+
+    #head-2{
+        margin: 11% 0 5% 0;
+    }
+
+    #discription-2{
+        margin:13% 0 0 0;
+    }
+
+    #box-3{
+        width:100%;
+        height: 730px;
+    }
+
+    #profile-3{
+        margin: 4% 0 0 5%;
+    }
+
+    #head-3{
+        margin:15% 0 7% 4%;
+        line-height: 24px;
+    }
+
+    #discription-3{
+        height:450px;
+        margin: 8% 0 4% 4%;
+    }
+
+    #box-4{
+        width:100%;
+        height: 330px;
+    }
+
+    #head-4{
+        width:80%;
+        margin:7% 6% 5% 0;
+    }
+
+    #discription-4{
+        width: 80%;
+        margin:2% 6% 5% 0;
+    }
+
+    #box-5{
+        width:96%;
+        height:330px;
+        margin-left: 2%;
+    }
+
+    #profile-5{
+        margin:3% 0;
+    }
+
+    #id-5{
+        margin:1% 0 0 5%;
+    }
+
+    #head-5{
+        margin:2% 0;
+    }
+
+    #discription-5{
+        margin:0 0 6% 0;
+    }
+
+}
+
+@media(min-width:1440px){
+    #container{
+        grid-template-columns:22% 23% 22% 20% ;
+        grid-template-rows: 330px 330px; 
+
+    }
+
+    .profile{
+        width:90%;
+    }
+    
+    .id{
+        margin:1% 0 0 8%;
+    }
+
+    .head{
+        width:90%;
+        margin: 0;
+    }
+    
+    .discription{
+        width:90%;
+        margin: 0;
+    }
+
+    #box-1{
+        width:100%;
+        height:320px;
+    }
+    
+    #profile-1{
+        height: 120px;
+        margin: 2% 1% 0 0;
+    }
+
+    #id-1{
+        margin: 0 0 2% 2%;
+    }
+
+    #head-1{
+        margin: 2% 0 3% 0 ;
+    }
+
+    #discription-1{
+        margin:0;
+    }
+
+    #box-2{
+        width:90%;
+        height: 320px;
+        margin-left: 5%;
+    }
+
+    #profile-2{
+        height: 70px;
+        margin: 4% 1% 0 0;
+    }
+    
+    #id-2{
+        margin:0 0 0 4%;
+        height:60px;
+    }
+
+    #id-2 .name{
+        margin: 0;
+    }
+    
+    #id-2 .sub-name{
+        margin: 0;
+    }
+
+    #head-2{
+        margin: 4% 0 5% 0;
+    }
+
+    #discription-2{
+        margin:4% 0 0 0;
+    }
+
+    #box-3{
+        width:100%;
+        height: 664px;
+    }
+
+    #profile-3{
+        margin: 4% 0 0 5%;
+    }
+
+    #head-3{
+        margin:8% 0 7% 4%;
+        line-height: 24px;
+    }
+
+    #discription-3{
+        height:450px;
+        margin: 2% 0 4% 4%;
+    }
+
+    #box-4{
+        width:100%;
+        height: 330px;
+    }
+    #head-4{
+        width:60%;
+        margin:7% 25% 5% 0;
+    }
+
+    #discription-4{
+        width: 80%;
+        margin:2% 6% 5% 0;
+    }
+
+    #box-5{
+        width:96%;
+        height:330px;
+        margin-left: 2%;
+    }
+
+    #profile-5{
+        margin:3% 0;
+    }
+
+    #id-5{
+        margin:1% 0 0 5%;
+    }
+
+    #head-5{
+        margin:2% 0;
+    }
+
+    #discription-5{
+        margin:0 0 6% 0;
+    }
+
+}
