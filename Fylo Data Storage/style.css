@@ -1,0 +1,288 @@
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    scroll-behavior: auto;
+}
+
+#container{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  hsl(228, 56%, 26%);
+}
+
+#box-1{
+    border-radius: 12px 7rem 12px 12px;
+}
+
+
+#logo1{
+    display: flex;
+    width: 60%;
+    height:65px;
+    justify-content: center;
+}
+
+#logo2{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icons{
+    background-color:  hsl(229, 57%, 11%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+#box-2{
+    height: 20vh;
+    border-radius:12px;
+    align-items: center;
+}
+
+#inner-card{
+    width: 95%;
+    height: 60%;
+    color:#fffafa80;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+#inner-card #text{
+    width: 96%;
+    height: 30px;
+    text-align: center;
+}
+
+.bold{
+    color: #fffafab4;
+}
+
+#inner-card #range{
+    width:94%;
+    height: 14px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:hsla(229, 46%, 16%, 0.733);
+    padding: 1%;
+    margin-bottom: .2rem;
+}
+
+#range .color{
+    width: 79%;
+    height: 99%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(45deg,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+}
+
+#range .ball{
+    width: 12px;
+    height: 12px;
+    border-radius:50%;
+    background-color: #fff;
+    margin: 1%;
+}
+
+#indicator{
+    width:98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #ffffff;
+    margin-top: .3rem;
+}
+
+#indicator #start{
+    font-weight: 600;
+}
+
+#balance-space{
+    width: 185px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: rgba(90, 86, 86, 0.559);
+    position: fixed;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: .7rem;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+
+#balance-space #left{
+    font-size: 3rem;
+    color: black;
+    letter-spacing: normal;
+}
+
+@media(min-width:320px){
+    #logo2{
+        margin-left: 1.5%;
+    }
+}
+
+@media(min-width:375px){
+    #logo2{
+        margin-left: 2.5%;
+    }
+}
+
+@media(min-width:426px){
+    #logo1{
+        justify-content: flex-start;
+        margin-left: 8%;
+        transition: all ease-in-out;
+    }
+    #logo2{
+        margin-left: 1%;
+        width: 250px;
+    }
+}
+
+@media(min-width:1024px){
+    body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-y: bottom;
+    }
+
+    #container{
+        height:50vh;
+        flex-direction: row;
+        margin-top: 8rem;
+    }
+
+    #box-1{
+        width: 80%;
+        height: 180px;
+    }
+    #box-2{
+        width:99%;
+        height: 135px;
+        margin-top: 2rem;
+    }
+
+    #inner-card #text{
+        text-align: start;
+    }
+
+    #balance-space{
+        position: fixed;
+        top: 47%;
+        left: 75%;
+        width: 150px;
+        border-radius: 8px 8px 0 8px;
+    }
+    #balance-space strong{
+        font-size: 2rem;
+    }
+    
+    #edge{
+        position: fixed;
+        top: 55%;
+        left: 87.8%;
+        display: block;
+        width: 0;
+        height: 0;
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+}
+
+@media (min-width:1440px){
+    body{
+        background-size: 100%;
+    }
+
+    #container{
+        width: 60%;
+        height:70vh;
+        flex-direction: row;
+        margin-top: 12rem;
+    }
+
+    #box-1{
+        width: 37%;
+        height: 200px;
+        margin-top: 1rem;
+    }
+
+    #box-2{
+        width:60%;
+        margin-top: 5rem;
+    }
+
+    #balance-space{
+        position: fixed;
+        top: 52%;
+        left: 67.7%;
+        width: 150px;
+        border-radius: 8px 8px 0 8px;
+    }
+    #balance-space strong{
+        font-size: 2rem;
+    }
+    
+    #edge{
+        position: fixed;
+        top: 59.6%;
+        left: 76.7%;
+        display: block;
+        width: 0;
+        height: 0;
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+}
