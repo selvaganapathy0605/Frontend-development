@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: League Spartan;
+}
+
+.purple {
+    color: hsl(300, 43%, 22%);
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.pink {
+    color: hsl(333, 80%, 67%);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.inner-card {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#head {
+    width: 70%;
+    height: 170px;
+    display: flex;
+    text-align: center;
+    align-items: end;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 400;
+    color: hsl(302, 16%, 56%);
+}
+
+#ratings {
+    height: 250px;
+    justify-content: space-around;
+}
+
+.rating {
+    width: 95%;
+    height: 65px;
+    background-color: hsla(302, 19%, 59%, 0.137);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.box {
+    width: 99%;
+    height: 240px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+}
+
+.inner-box {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.box .profile {
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile #image,
+.profile #image img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 80%;
+}
+
+.profile #name {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+}
+
+
+#content {
+    line-height: 1.4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+}
+
+.blank {
+    height: 6rem;
+}
+
+@media(min-width:769px){
+    #container{
+        width: 90%;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .card{
+        width: 90%;
+        height: 75%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 25px;
+    }
+
+    .inner-card{
+        width: 50%;
+        align-items: start;
+    }
+
+    #head{
+        width:51%;
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: start;
+        justify-content: flex-start;
+    }
+
+    #text{
+        width: 70%;
+        text-align: start;
+        font-size: 1.1rem;
+    }
+
+    .rating{
+        width: 70%;
+        flex-direction: row;
+        height: 3.2rem;
+        text-align: start;
+    }
+
+    #rating-1{
+        margin-top:2rem
+    }
+
+    #rating-2{
+        margin-left: 3rem;
+    }
+
+    #rating-3{
+        margin-left: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .comment{
+        text-align: start;
+    }
+
+    #person2{
+        margin-top: 1rem;
+    }
+
+    #person3{
+        margin-top: 2.5rem;
+    }
+}
