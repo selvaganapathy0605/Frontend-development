@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="success" id="popup-mess">
+        <div id="succ">
+            <img src="./assets/images/icon-success-check.svg" alt="Done">
+            <h4 id="succ-msg">Message Sent!</h4>
+        </div>
+        <p id="msg">Thanks for completing the form.We'll be in touch soon!</p>
+    </header>
+    <main id="container">
+        <form id="form">
+            <h1 id="heading">Contact Us</h1>
+            <div class="group-inputs" id="names">
+                <div class="copule-inputs" id="firstname">
+                    <label for="fname">First Name <span class="star">*</span></label>
+                    <input class="inputs" type="text" name="fname" id="fname">
+                    <p class="error"></p>
+                </div>
+                <div class="copule-inputs" id="lastname">
+                    <label for="lname">Last Name <span class="star">*</span></label>
+                    <input class="inputs" type="text" name="lname" id="lname">
+                    <p class="error"></p>
+
+                </div>
+            </div>
+            <div class="group-inputs" id="mail">
+                <label for="email">Email <span class="star">*</span></label>
+                <input class="inputs" type="text" name="email" id="email">
+                <p class="error"></p>
+
+            </div>
+            <div class="group-inputs" id="radio-selector">
+                <label for="query">Query Type <span class="star">*</span></label>
+                <div id="radio-options">
+                    <div class="radio-inputs" id="gquery">
+                        <input class="inputs" type="radio" name="query" id="general">
+                        <p class="query-type">General query</p>
+                    </div>
+                    <div class="radio-inputs" id="squery">
+                        <input class="inputs" type="radio" name="query" id="support"> 
+                        <p class="query-type">support query</p>
+                    </div>
+                </div>
+                <p class="error"></p>
+            </div>
+            <div class="group-inputs" id="message">
+                <label for="mess">Message <span class="star">*</span></label>
+                <textarea class="inputs" name="mess" id="mess" rows="10" cols="10"></textarea>
+                <p class="error"></p>
+            </div>
+            <div class="group-inputs" id="terms-conditions">
+                <div id="norms">
+                    <input type="checkbox" name="condition" id="condition">
+                    <p class="text">I consent to being contactes by the team<span class="star">*</span>
+                </p>
+                </div>
+                <p class="error"></p>
+            </div>
+            <div class="group-inputs" id="button">
+                <button>Submit</button>
+            </div>
+        </form>
+    </main>
+    <script src="./index.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.star {
+    color: hsl(169, 82%, 27%);
+}
+
+.error{
+    color: hsl(0,66%,54%);
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'karla', sans-serif;
+    background-color: hsl(148, 38%, 91%);
+    padding: 1rem;
+    gap: 25px;
+}
+
+#popup-mess {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: hsl(187, 24%, 22%);
+    color: #fff;
+    border-radius: 8px;
+}
+
+#succ {
+    display: flex;
+    gap: 10px;
+    margin-bottom: .5rem;
+}
+
+#popup-mess {
+    display: none;
+}
+
+#container {
+    margin-top: 1rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+label{
+    font-size: 16px;
+}
+
+.group-inputs {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+#names {
+    flex-direction: row;
+}
+
+.copule-inputs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs {
+    width: 95%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid hsl(180, 1%, 62%);
+    transition: all 1ms ease-in-out;
+}
+
+.inputs:hover,
+.radio-inputs:hover {
+    border: 3px solid hsl(169, 82%, 27%);
+}
+
+.inputs:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+
+#radio-selector {
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#radio-options {
+    width: 100%;
+    display: flex;
+    gap: 39px;
+}
+
+.radio-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    width: 46.5%;
+    padding: 1rem;
+    border: 2px solid hsl(180, 1%, 62%);
+    border-radius: 8px;
+}
+
+.radio-inputs .inputs {
+    width: 18px;
+    height: 18px;
+    outline: none;
+}
+
+#norms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+#norms #condition {
+    width: 18px;
+    height: 18px;
+}
+
+button {
+    width: 95%;
+    padding: 1rem;
+    background-color: hsl(161, 81%, 31%);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
