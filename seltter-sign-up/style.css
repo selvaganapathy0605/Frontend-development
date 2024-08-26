@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 2.7rem;
+}
+
+.text {
+    font-weight: 500;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#validation-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem 1.5rem;
+}
+
+#img-box {
+    background-image: url('./assets/images/illustration-sign-up-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 340px;
+    border-radius: 0 0 16px 16px;
+}
+
+
+#point-list {
+    margin-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list {
+    padding-left: 1rem;
+    width: 95%;
+}
+
+.list::marker {
+    content: url('./assets/images/icon-list.svg');
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+
+}
+
+#validation {
+    width: 100%;
+}
+
+#email {
+    padding: 1.3rem;
+    width: 100%;
+    font-size: large;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #706e6e;
+    margin: .5rem 0 1.5rem 0;
+}
+
+.btn {
+    padding: 1.3rem;
+    border-radius: 8px;
+    color: #fff;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+}
+
+#valid-msg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error-msg{
+    color: red;
+    /* color: rgba(241, 188, 188, 0.744); */
+}
+
+#label {
+    font-weight: 800;
+}
+
+#success-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    margin: 2.9rem 0;
+    min-height: 88vh;
+}
+
+.in-card:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 50vh;
+    padding: 1rem 0;
+    margin-top: 2.5rem;
+}
+
+.in-card img {
+    width: 75px;
+    height: 75px;
+}
+/* 
+#validation-card{
+    display: none;
+} */
+
+#success-card {
+    display: none;
+}
+
+
+@media(min-width:768px) {
+    body {
+        background-color: hsl(235, 18%, 26%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #success-card {
+        width: 30%;
+        justify-content: space-between;
+        background-color: #f4f2f2;
+        min-height: 45vh;
+        margin-top: 0;
+        border-radius: 16px;
+        padding: 1.5rem;
+    }
+
+    .in-card:first-child {
+        margin: 0;
+        padding: 0;
+        min-height: 0;
+        justify-content: center;
+    }
+
+    #heading2 {
+        margin: 1rem 0;
+    }
+
+    #button:hover {
+        outline: none;
+        background-color: hsl(4, 100%, 67%);
+        box-shadow: 1px 5px hsl(4, 58%, 64%);
+        transition: all .5s;
+    }
+
+
+    #validation-card {
+        flex-direction: row-reverse;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 16px;
+    }
+
+    #img-box {
+        width: 550px;
+        height: inherit;
+        background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+        border-radius: 0 8px 8px 0;
+    }
+
+    #note1 {
+        margin-top: .5rem;
+    }
+
+    #point-list {
+        margin: 1rem;
+    }
+}
